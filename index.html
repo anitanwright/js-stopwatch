@@ -1,22 +1,23 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <link rel="stylesheet" type="text/css" href="/js-stopwatch/styles/style.css">
             <script src="/js-stopwatch/scripts/script.js"></script>
+
+            <link rel="stylesheet" type="text/css" href="/js-stopwatch/styles/style.css">
         </head>
             <body>
                 <header>
-                    <h1>Stopwatch</h1>
-                    <h2>Made with Plain Vanilla JavaScript</h2>
+                    <h1>Stopwatch made with Plain Vanilla JS</h1>
                 </header>
-                <div class="wrapper">
-                    <p>
-                        <span id="seconds">00</span>:<span id="tens">00</span>
-                    </p>
-                    <button id="button-start">Start</button>
-                    <button id="button-stop">Stop</button>
-                    <button id="button-reset">Reset</button>
+                <div id="stopwatch">
+                    00:00:00 
                 </div>
+                 <ul id='buttons'>
+                    <li><button onclick='startTimer()'>Start</button></li>
+                    <li><button onclick='stopTimer()'>Stop</button></li>
+                    <li><button onclick='resetTimer()'>Reset</button></li>
+                </ul>
+                <script src="/js-stopwatch/scripts/script.js"></script>
             </body>
     </html>
 
